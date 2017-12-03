@@ -1,0 +1,16 @@
+
+.container {
+  @include flex-column-center;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.section-about {
+  padding: 5rem 0;
+}
+
+.section-services {
+  padding: 5rem 0;
+}
+
+  

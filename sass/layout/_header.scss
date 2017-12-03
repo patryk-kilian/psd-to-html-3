@@ -1,0 +1,89 @@
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to bottom,rgba($color-1, .9),rgba($color-2, .9))  ,url(../img/hero1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &__container {
+    @include flex-column-center;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 120rem;
+    justify-content: space-between;
+  }
+
+  &__text-box {
+    text-align: center;
+    @include flex-column-center;
+  }
+
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  
+  &__brand {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 3rem;
+      font-weight: 700; 
+      transition: color .2s;
+    }
+    
+    &:hover,
+    &:active {
+      color: $color-2;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link,
+  &__icon  {
+    transition: all .2s;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-white;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-left: 3rem;
+    }   
+  }
+
+  &__link {
+    padding-bottom: 1rem;
+
+    &:hover,
+    &:active {
+      color: $color-2;
+      border-bottom: 2px solid $color-2;
+    }
+  }
+
+  &__icon {
+    &:link,
+    &:visited {
+      font-size: 1.6rem;
+    }
+    
+    &:hover,
+    &:active {
+      color: $color-2;
+    } 
+  }
+}

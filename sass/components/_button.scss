@@ -1,0 +1,31 @@
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+  cursor: pointer;
+  color: $color-white;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem 4rem;
+  transition: all .2s;
+
+  }
+
+  &:active,
+  &:focus {
+      outline: none;
+  }
+
+  &--ghost {
+    border: 2px solid $color-white;
+    background-color: transparent;
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 1rem 2rem rgba($color-black,.2);
+      background-color: $color-1;
+    }
+  }
+
+}
