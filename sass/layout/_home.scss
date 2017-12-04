@@ -13,4 +13,28 @@
   padding: 5rem 0;
 }
 
-  
+.section-devices {
+  position: relative;
+  min-height: 85rem;
+  background-image: linear-gradient(rgba($color-white, .8), rgba($color-white, .8)) ,url(../img/hero2.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 5rem;
+
+  &__tablet {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__phone {
+    position: absolute;
+    bottom: -10rem;
+    left: 60%;
+  }
+}
+
+.section-service {
+  padding: 10rem 0 5rem 0;
+}

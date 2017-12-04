@@ -1,0 +1,31 @@
+
+.services {
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__box {
+    flex: 0 0 33.333%;
+    margin: 3rem 0;
+    padding-left: 3rem;
+
+    display:flex;
+    align-items: flex-start;
+  }  
+
+  &__icon {
+    margin: 1rem 2rem 0 0;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    border-top: 1px solid $color-grey-light;
+  }
+}
+

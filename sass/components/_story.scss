@@ -1,5 +1,6 @@
 
 .story {
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -8,6 +9,7 @@
   &__photo {
     position: relative;
     transition: all .5s;
+    flex: 0 0 32%;
 
     &:hover .story__caption {
       opacity: 1;
