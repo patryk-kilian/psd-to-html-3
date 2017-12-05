@@ -30,7 +30,8 @@
 
 }
 
-.btn-expand {
+
+.btn-arrow {
   &,
   &:link,
   &:visited {
@@ -39,11 +40,12 @@
     border: none;
     background-color: transparent;
     font-size: 3rem;
-    margin-left: auto;
   }
 
   &:active,
   &:focus {
       outline: none;
   }
+
+  
 }

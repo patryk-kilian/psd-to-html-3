@@ -1,22 +1,22 @@
 
-.story {
+.gallery {
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
 
 
-  &__photo {
+  &__box {
     position: relative;
     transition: all .5s;
     flex: 0 0 32%;
 
-    &:hover .story__caption {
+    &:hover .gallery__caption {
       opacity: 1;
       
     }
 
-    &:hover .story__img {
+    &:hover .gallery__img {
       transform: translate(-10px,-10px);
     }
 
@@ -62,11 +62,6 @@
 
   &__caption {
     z-index: 300;
-    color: $color-white;
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
     position: absolute;
     top: 45%;
     left: 45%;
@@ -74,11 +69,74 @@
     opacity: 0;
     transition: opacity .3s;
     backface-visibility: hidden;
+
+    &--text {
+      color: $color-white;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    
+    &--buttons {
+      display: flex;
+      width: 60%;
+    }
+   
+  }
+
+  &__button {
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-1;
+      text-align: center;
+      font-size: 3rem;
+      flex: 0 0 25%;
+      background-color: $color-2;
+      transition: all .3s;
+    }
+    
+    &:hover,
+    &:active {
+      color: $color-white;
+      background-color: $color-1;
+    }
+    
+    &:not(:last-child) {
+      border-right: 1px solid $color-1;
+    }
   }
 
   &__icon {
     display: block;
     font-size: 3rem;
   }
+
+  &__team {
+    flex: 0 0 32%;
+
+    &--name,
+    &--profession {
+      display: block;
+      text-align: center;
+    }
+
+    &--name {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      color: $color-grey-dark;
+      text-transform: uppercase;
+    }
+
+    &--profession {
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: 300;
+      color: $color-grey;
+    }
+  }
+
 
 }

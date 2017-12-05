@@ -1,0 +1,54 @@
+
+.quote {
+  
+  background-color: $color-white-darker;
+  padding: 5rem 0;
+  margin: 0 auto;
+
+  &__container {
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+  }  
+
+  &__photo {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+  }
+
+  &__box {
+    width: 60%;
+  }
+
+  &__text {
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: $color-grey;
+    font-style: italic;
+    line-height: 3.6rem;
+  }
+
+  &__author {
+    display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: $color-grey-dark;
+    margin-top: 1rem;
+    margin-left: 7rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      margin-left: -7rem;
+      top: 50%;
+      background-color: $color-1;
+      height: 3px;
+      width: 6rem;
+    }
+  }
+}
