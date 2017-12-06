@@ -14,6 +14,10 @@ body {
   &--white {
     background-color: $color-white;
   }
+
+  &--margin-small {
+    margin: 1rem 0;
+  }
 }
 
 .heading-primary {

@@ -1,0 +1,38 @@
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__box {
+    flex: 0 0 50%;
+    padding-top: 5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  &__photo {
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+  }
+
+  &__text-box {
+    width: 70%;
+  }
+
+  &__name {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__profession {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+    font-style: italic;
+  }
+}

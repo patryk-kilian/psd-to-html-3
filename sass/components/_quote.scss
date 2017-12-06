@@ -5,6 +5,10 @@
   padding: 5rem 0;
   margin: 0 auto;
 
+  &--white-background {
+    background-color: $color-body-background;
+  }
+
   &__container {
     max-width: 120rem;
     display: flex;

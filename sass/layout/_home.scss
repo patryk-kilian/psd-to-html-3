@@ -42,3 +42,36 @@
 .section-team {
   padding: 5rem 0;
 }
+
+.logos {
+  padding: 4rem 0;
+  background-color: $color-white-darker;
+
+  &__list {
+    margin: 0 auto;
+    padding: 0 2rem;
+    list-style: none;
+    max-width: 120rem;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    text-align: center;
+    margin: 0 .5rem;
+
+    flex: 0 0 16%;
+  }
+}
+
+.section-portfolio {
+  padding: 5rem 0;
+}
+
+.section-clients {
+  background-image: linear-gradient(rgba($color-white, .8), rgba($color-white, .8)) ,url(../img/hero3.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0;
+}

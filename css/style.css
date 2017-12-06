@@ -6,8 +6,10 @@
   box-sizing: inherit; }
 
 html {
+  color: #333;
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #fcfcfc; }
 
 img {
   max-width: 100%; }
@@ -25,6 +27,8 @@ body {
   border: none; }
   .separator--white {
     background-color: #fff; }
+  .separator--margin-small {
+    margin: 1rem 0; }
 
 .heading-primary {
   line-height: 1;
@@ -196,6 +200,57 @@ body {
       font-weight: 300;
       color: #999; }
 
+.portfolio-gallery {
+  display: flex; }
+  .portfolio-gallery__col {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; }
+  .portfolio-gallery__item {
+    position: relative;
+    height: 100%;
+    cursor: pointer; }
+    .portfolio-gallery__item::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 228, 139, 0.9));
+      z-index: 1;
+      opacity: 0;
+      transition: opacity .3s; }
+    .portfolio-gallery__item:hover::after {
+      opacity: 1; }
+    .portfolio-gallery__item:hover .portfolio-gallery__caption {
+      opacity: 1; }
+  .portfolio-gallery__img {
+    min-height: 100%;
+    z-index: -1; }
+  .portfolio-gallery__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 100; }
+  .portfolio-gallery__icon, .portfolio-gallery__text {
+    text-align: center;
+    display: block;
+    color: #fff; }
+  .portfolio-gallery__icon {
+    font-size: 3rem; }
+  .portfolio-gallery__text--up {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .portfolio-gallery__text--down {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 2.4rem; }
+
 .numbers-row {
   background-color: #95e1d3;
   height: 27rem;
@@ -272,9 +327,11 @@ body {
     margin-right: 2rem; }
 
 .quote {
-  background-color: #f8f8f8;
+  background-color: #f3f1f1;
   padding: 5rem 0;
   margin: 0 auto; }
+  .quote--white-background {
+    background-color: #fcfcfc; }
   .quote__container {
     max-width: 120rem;
     display: flex;
@@ -310,6 +367,32 @@ body {
       background-color: #f38181;
       height: 3px;
       width: 6rem; }
+
+.clients {
+  display: flex;
+  flex-wrap: wrap; }
+  .clients__box {
+    flex: 0 0 50%;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; }
+  .clients__photo {
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%; }
+  .clients__text-box {
+    width: 70%; }
+  .clients__name {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .clients__profession {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+    font-style: italic; }
 
 .header {
   height: 100vh;
@@ -401,4 +484,28 @@ body {
   padding: 10rem 0 5rem 0; }
 
 .section-team {
+  padding: 5rem 0; }
+
+.logos {
+  padding: 4rem 0;
+  background-color: #f3f1f1; }
+  .logos__list {
+    margin: 0 auto;
+    padding: 0 2rem;
+    list-style: none;
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-around; }
+  .logos__item {
+    text-align: center;
+    margin: 0 .5rem;
+    flex: 0 0 16%; }
+
+.section-portfolio {
+  padding: 5rem 0; }
+
+.section-clients {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/hero3.jpg);
+  background-position: center;
+  background-size: cover;
   padding: 5rem 0; }
