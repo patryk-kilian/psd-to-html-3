@@ -75,3 +75,43 @@
   background-size: cover;
   padding: 5rem 0;
 }
+
+.section-blog {
+  padding: 5rem 0;
+}
+
+.map {
+  background-image: linear-gradient(rgba($color-white, .8), rgba($color-white, .8)) ,url(../img/map.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    @include flex-column-center;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    color: $color-1;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-1;
+      font-size: 2.4rem;
+      font-weight: 700;
+      transition: color .2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-2;
+    }
+  }
+}

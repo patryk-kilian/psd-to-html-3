@@ -69,7 +69,7 @@ body {
   color: #999;
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2.4; }
+  line-height: 2.4rem; }
   .paragraph--short {
     width: 85%; }
   .paragraph--long {
@@ -394,6 +394,67 @@ body {
     line-height: 2.4rem;
     font-style: italic; }
 
+.blog {
+  display: flex;
+  justify-content: space-between; }
+  .blog__box {
+    flex: 0 0 31%; }
+  .blog__img-box {
+    position: relative; }
+  .blog__caption {
+    color: #fff;
+    width: 6rem;
+    height: 7rem;
+    position: absolute;
+    bottom: 2rem;
+    left: -1rem;
+    background-color: #95e1d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .blog__day {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: .8; }
+  .blog__month {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic; }
+  .blog__heading {
+    font-size: 1.4rem;
+    font-weight: 400; }
+  .blog__numbers {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 1rem;
+    margin-right: 2rem; }
+  .blog__numbers-box {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center; }
+  .blog__number {
+    margin-left: .5rem; }
+  .blog__icon {
+    font-size: 2rem;
+    color: #95e1d3;
+    margin-right: .5rem; }
+
+.footer {
+  padding: 5rem 0; }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 120rem; }
+  .footer__box {
+    flex: 0 0 31%; }
+  .footer__brand {
+    font-size: 4.6rem;
+    font-weight: 700;
+    color: #cccccc; }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 228, 139, 0.9)), url(../img/hero1.jpg);
@@ -509,3 +570,31 @@ body {
   background-position: center;
   background-size: cover;
   padding: 5rem 0; }
+
+.section-blog {
+  padding: 5rem 0; }
+
+.map {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/map.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .map__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .map__icon {
+    font-size: 3rem;
+    color: #f38181; }
+  .map__link:link, .map__link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f38181;
+    font-size: 2.4rem;
+    font-weight: 700;
+    transition: color .2s; }
+  .map__link:hover, .map__link:active {
+    color: #fce48b; }

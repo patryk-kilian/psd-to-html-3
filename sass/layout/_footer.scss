@@ -1,0 +1,21 @@
+
+.footer {
+  padding: 5rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 120rem;
+  }
+
+  &__box {
+    flex: 0 0 31%;
+  }
+
+  &__brand {
+    font-size: 4.6rem;
+    font-weight: 700;
+    color: $color-grey-light-2;
+  }
+}
