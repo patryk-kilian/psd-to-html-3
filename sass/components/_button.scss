@@ -28,6 +28,15 @@
     }
   }
 
+  &--submit {
+    border: none;
+    background-color: $color-3;
+
+    &:hover {
+      background-color: darken($color-3, 40);
+    }
+  }
+
 }
 
 
