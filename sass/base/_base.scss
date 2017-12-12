@@ -8,9 +8,27 @@
 
 html {
   color: $color-grey-dark;
-  font-size: 62.5%; 
+  font-size: 62.5%;
   box-sizing: border-box;
   background-color: $color-body-background;
+  // overflow-x: hidden;
+  // overflow-y: visible;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  // @include respond(phone) {
+  //   font-size: 43.75%;
+  // }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 img {

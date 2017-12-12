@@ -4,13 +4,28 @@
   display: flex;
   width: 100%;
 
+  @include respond(phone) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &__photo-box {
     flex: 0 0 50%;
+
+    @include respond(phone) {
+      flex: 0 0 90%;
+      margin-bottom: 3rem;
+    }
   }
 
   &__text-box {
     flex: 1;
     margin-left: 1rem;
+
+    @include respond(phone) {
+      flex: 0 0 90%;
+      margin: 0;
+    }
   }
 
   &__expand-box {

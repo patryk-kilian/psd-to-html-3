@@ -1,14 +1,35 @@
 
 .blog {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 2rem;
+
+  @include respond(tab-port) {
+    justify-content: space-around;
+    margin-top: 5rem;
+  }
 
   &__box {
     flex: 0 0 31%;
+
+    @include respond(tab-port) {
+      flex: 0 0 45%;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(phone) {
+      flex: 0 0 80%;
+    }
   }
 
   &__img-box {
     position: relative;
+
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__caption {
@@ -24,6 +45,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @include respond(phone) {
+      left: 2rem;
+    }
   }
 
   &__day {
@@ -40,7 +65,8 @@
 
   &__heading {
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 600;
+    color: $color-grey-2;
     text-transform: uppercase;
     margin: 1rem 0;
     display: block;

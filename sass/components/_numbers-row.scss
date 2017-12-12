@@ -7,6 +7,10 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(phone) {
+    display: none;
+  }
+
   &__list {
     max-width: 120rem;
     color: $color-white;
@@ -42,4 +46,4 @@
   &__text {
     font-size: 1.4rem;
   }
-}  
+}

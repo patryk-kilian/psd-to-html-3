@@ -3,17 +3,31 @@
   padding: 2rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 
+  @include respond(phone) {
+    justify-content: center;
+  }
 
   &__box {
     position: relative;
     transition: all .5s;
     flex: 0 0 32%;
 
+    @include respond(tab-port) {
+      flex: 0 0 44%;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(phone) {
+      flex: 0 0 65%;
+    }
+
     &:hover .gallery__caption {
       opacity: 1;
-      
+
     }
 
     &:hover .gallery__img {
@@ -29,7 +43,7 @@
     }
 
     &::before {
-      z-index: -1;
+      z-index: 1;
       content: "";
       position: absolute;
       top: 0;
@@ -117,6 +131,16 @@
   &__team {
     flex: 0 0 32%;
 
+    @include respond(tab-port) {
+      flex: 0 0 44%;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(phone) {
+      flex: 0 0 65%;
+    }
+
     &--name,
     &--profession {
       display: block;
@@ -126,7 +150,8 @@
     &--name {
       margin-top: 2rem;
       font-size: 1.4rem;
-      color: $color-grey-dark;
+      color: $color-grey-2;
+      font-weight: 600;
       text-transform: uppercase;
     }
 

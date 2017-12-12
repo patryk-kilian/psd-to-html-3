@@ -7,11 +7,39 @@
     justify-content: space-between;
     margin: 0 auto;
     max-width: 120rem;
+    padding: 0 2rem;
+
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 
   &__box {
     flex: 0 0 31%;
+
+    @include respond(tab-port) {
+      flex: 0 0 45%;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(phone) {
+      flex: 0 0 80%;
+    }
+
+    &--max {
+      @include respond(tab-port) {
+        flex: 0 0 100%;
+        margin: 0 auto;
+      }
+
+      @include respond(phone) {
+        flex: 0 0 60%;
+      }
+    }
   }
+
+
 
   &__brand {
     font-size: 4.6rem;
@@ -59,12 +87,22 @@
     }
   }
 
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &__input {
     background-color: $color-white;
     width: 55%;
     height: 4rem;
     border: 1px solid $color-grey-light;
     padding: 0 1rem;
+
+    @include respond(tab-land) {
+      flex: 0 0 100%;
+      margin-bottom: 3px;
+    }
 
     &::-webkit-input-placeholder {
       color: $color-grey-light;
@@ -74,6 +112,8 @@
 
   &__heading  {
     font-size: 1.4rem;
+    font-weight: 600;
+    color: $color-grey-2;
     text-transform: uppercase;
     margin-bottom: 4rem;
     display: block;
@@ -91,6 +131,7 @@
 
   &__blogs-text {
     flex: 0 0 60%;
+    margin-left: 2rem;
   }
 
   &__heading-blogs {
@@ -109,10 +150,22 @@
   &__instagram-gallery {
     display: flex;
     flex-wrap: wrap;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
   }
 
   &__instagram-photo-box {
     flex: 0 0 26%;
+
+    @include respond(tab-port) {
+      flex: 0 0 11%;
+    }
+
+    @include respond(phone) {
+      flex: 0 0 30%;
+    }
   }
 
   &__instagram-photo {

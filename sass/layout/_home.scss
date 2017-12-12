@@ -14,6 +14,13 @@
   padding: 6rem 0;
 }
 
+.section-about {
+  @include respond(phone) {
+    background-color: $color-white-darker;
+    z-index: -1;
+  }
+}
+
 .section-devices {
   position: relative;
   min-height: 85rem;
@@ -22,17 +29,39 @@
   background-size: cover;
   padding-top: 5rem;
 
+  @include respond(phone) {
+    min-height: 60rem;
+  }
+
   &__tablet {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+
+    @include respond(tab-port) {
+      width: 50rem;
+    }
+
+    @include respond(phone) {
+      width: 30rem;
+    }
+
   }
 
   &__phone {
     position: absolute;
     bottom: -10rem;
     left: 60%;
+
+    @include respond(tab-port) {
+      left: 50%;
+      width: 30rem;
+    }
+
+    @include respond(phone) {
+      width: 20rem;
+    }
   }
 }
 
@@ -52,6 +81,10 @@
 
     display: flex;
     justify-content: space-around;
+
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -59,6 +92,10 @@
     margin: 0 .5rem;
 
     flex: 0 0 16%;
+
+    @include respond(tab-port) {
+      flex: 0 0 32%;
+    }
   }
 }
 

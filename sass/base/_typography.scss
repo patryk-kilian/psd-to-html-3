@@ -44,6 +44,19 @@ body {
   }
 }
 
+@media only screen and (max-width: 29.3em) {
+  .heading-primary {
+
+    &--main {
+      font-size: 7rem;
+    }
+  
+    &--sub {
+      font-size: 4rem;
+    }
+  }
+}
+
 .heading-secondary {
   font-size: 3rem;
   font-weight: 700;
@@ -59,7 +72,8 @@ body {
 .heading-quaternary {
   text-transform: uppercase;
   font-size: 1.4rem;
-  font-weight: 400;
+  color: $color-grey-2;
+  font-weight: 600;
 }
 
 .paragraph {
@@ -71,6 +85,10 @@ body {
 
   &--short {
     width: 85%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &--main {

@@ -5,6 +5,10 @@
   padding: 5rem 0;
   margin: 0 auto;
 
+  @include respond(phone) {
+    display: none;
+  }
+
   &--white-background {
     background-color: $color-body-background;
   }

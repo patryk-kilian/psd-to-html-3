@@ -1,5 +1,6 @@
 
 .clients {
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
 
@@ -10,12 +11,17 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+
+    @include respond(phone) {
+      flex: 0 0 100%;
+    }
   }
 
   &__photo {
     height: 11rem;
     width: 11rem;
     border-radius: 50%;
+    margin-right: 1rem;
   }
 
   &__text-box {
@@ -25,7 +31,8 @@
   &__name {
     display: block;
     font-size: 1.4rem;
-    font-weight: 400;
+    color: $color-grey-2;
+    font-weight: 600;
     text-transform: uppercase;
   }
 

@@ -2,9 +2,22 @@
 .portfolio-gallery {
   display: flex;
 
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &__col {
     display: flex;
     flex-direction: column;
+
+    @include respond(tab-port) {
+      flex: 0 0 43%;
+    }
+
+    @include respond(phone) {
+      flex: 0 0 65%;
+    }
   }
 
   &__item {
