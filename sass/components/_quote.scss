@@ -15,9 +15,14 @@
 
   &__container {
     max-width: 120rem;
+    height: 20rem;
+    padding: 0 3rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
+    overflow: hidden;
+    position: relative;
   }  
 
   &__photo {
@@ -27,7 +32,23 @@
   }
 
   &__box {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    // left: 12rem;
+    left: 120%;
+    transition: all .2s;
+
+    &--current {
+      left: 12rem;
+    }
+
+  }
+
+  &__text-box {
     width: 60%;
+    margin-top: 2rem;
   }
 
   &__text {
@@ -60,3 +81,4 @@
     }
   }
 }
+

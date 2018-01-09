@@ -49,6 +49,12 @@
     border: none;
     background-color: transparent;
     font-size: 3rem;
+    transition: color .3s;
+    // height: 5rem;
+  }
+
+  &:hover {
+    color: $color-grey-2;
   }
 
   &:active,
@@ -56,5 +62,4 @@
       outline: none;
   }
 
-  
 }

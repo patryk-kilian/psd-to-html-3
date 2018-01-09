@@ -53,7 +53,7 @@
         <button class="btn btn--ghost">Learn More</button>
       </div>
 
-      <div>&nbsp;</div>
+      <span class="header__arrow icon ion-chevron-down"></span>
     </div>
   </header>
 
@@ -210,17 +210,26 @@
             <div class="service__expand-box">
               <img src="img/icon7.png" alt="" class="service__icon">
               <h4 class="heading-quaternary">Photograph</h4>
-              <button class="btn-arrow u-margin-left-auto"><span class="icon ion-chevron-down"></span></button>
+              <button id="js-service-button" class="btn-arrow u-margin-left-auto"><span id="js-service-icon" class="icon ion-chevron-down"></span></button>
+            </div>
+            <div class="service__description">
+              <p class="paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
             <div class="service__expand-box">
               <img src="img/icon8.png" alt="" class="service__icon">
               <h4 class="heading-quaternary">Creativity</h4>
-              <button class="btn-arrow u-margin-left-auto"><span class="icon ion-chevron-down"></span></button>
+              <button id="js-service-button" class="btn-arrow u-margin-left-auto"><span id="js-service-icon"  class="icon ion-chevron-down"></span></button>
+            </div>
+            <div class="service__description">
+              <p class="paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
             <div class="service__expand-box">
               <img src="img/icon9.png" alt="" class="service__icon">
               <h4 class="heading-quaternary">Web Design</h4>
-              <button class="btn-arrow u-margin-left-auto"><span class="icon ion-chevron-down"></span></button>
+              <button id="js-service-button" class="btn-arrow u-margin-left-auto"><span id="js-service-icon"  class="icon ion-chevron-down"></span></button>
+            </div>
+            <div class="service__description">
+              <p class="paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
           </div>
         </div>
@@ -229,15 +238,35 @@
     <!-- =========== QUOTE ==============  -->
     <div class="quote">
       <div class="quote__container">
-        <button class="btn-arrow"><span class="icon ion-chevron-left"></span></button>
-        <img src="img/jessie.png" alt="" class="quote__photo">
-        <div class="quote__box">
-          <p class="quote__text">
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur sunt deleniti, dolore quo odit est voluptas eaque voluptates nihil omnis, sed ex."
-          </p>
-          <span class="quote__author">Jessie Pinkman</span>
+        <button id="js-btn-previous-first" class="btn-arrow"><span class="icon ion-chevron-left"></span></button>
+        <div id="js-quote-box-primary" class="quote__box">
+          <img src="img/jessie.png" alt="" class="quote__photo">
+          <div class="quote__text-box">
+            <p class="quote__text">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur sunt deleniti, dolore quo odit est voluptas eaque voluptates nihil omnis, sed ex."
+            </p>
+            <span class="quote__author">Jessie Pinkman</span>
+          </div>
         </div>
-        <button class="btn-arrow"><span class="icon ion-chevron-right"></span></button>
+        <div id="js-quote-box-primary" class="quote__box">
+          <img src="img/walter.jpeg" alt="" class="quote__photo">
+          <div class="quote__text-box">
+            <p class="quote__text">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur sunt deleniti, dolore quo odit est voluptas."
+            </p>
+            <span class="quote__author">Walter White</span>
+          </div>
+        </div>
+        <div id="js-quote-box-primary" class="quote__box">
+          <img src="img/saul.jpg" alt="" class="quote__photo">
+          <div class="quote__text-box">
+            <p class="quote__text">
+              "Amet consectetur adipisicing elit. Aspernatur sunt deleniti, dolore quo odit est voluptas eaque voluptates nihil omnis, sed ex."
+            </p>
+            <span class="quote__author">Saul Goodman</span>
+          </div>
+        </div>
+        <button id="js-btn-next-first" class="btn-arrow"><span class="icon ion-chevron-right"></span></button>
       </div>
     </div>
     <!-- =========== SECTION TEAM ==============  -->
@@ -382,17 +411,37 @@
       </div>
     </section>
     <!-- =========== QUOTE ==============  -->
-    <div class="quote quote--white-background">
+    <div class="quote">
       <div class="quote__container">
-        <button class="btn-arrow"><span class="icon ion-chevron-left"></span></button>
-        <img src="img/walter.jpeg" alt="" class="quote__photo">
-        <div class="quote__box">
-          <p class="quote__text">
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur sunt deleniti, dolore quo odit est voluptas eaque voluptates nihil omnis, sed ex."
-          </p>
-          <span class="quote__author">Walter White</span>
+        <button id="js-btn-previous-second" class="btn-arrow"><span class="icon ion-chevron-left"></span></button>
+        <div id="js-quote-box-secondary" class="quote__box">
+          <img src="img/luke.jpg" alt="" class="quote__photo">
+          <div class="quote__text-box">
+            <p class="quote__text">
+              "Aspernatur sunt deleniti. Lorem ipsum dolor sit, amet consectetur adipisicing elit.  dolore quo odit est voluptas eaque voluptates nihil omnis, sed ex."
+            </p>
+            <span class="quote__author">Luke Skywalker</span>
+          </div>
         </div>
-        <button class="btn-arrow"><span class="icon ion-chevron-right"></span></button>
+        <div id="js-quote-box-secondary" class="quote__box">
+          <img src="img/obi.jpg" alt="" class="quote__photo">
+          <div class="quote__text-box">
+            <p class="quote__text">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur sunt deleniti, dolore quo odit est voluptas."
+            </p>
+            <span class="quote__author">Obi-Wan Kenobi</span>
+          </div>
+        </div>
+        <div id="js-quote-box-secondary" class="quote__box">
+          <img src="img/darth.jpg" alt="" class="quote__photo">
+          <div class="quote__text-box">
+            <p class="quote__text">
+              "Amet consectetur adipisicing elit. Aspernatur sunt deleniti, dolore quo odit est voluptas eaque voluptates nihil omnis, sed ex."
+            </p>
+            <span class="quote__author">Darth Vader</span>
+          </div>
+        </div>
+        <button id="js-btn-next-second"  class="btn-arrow"><span class="icon ion-chevron-right"></span></button>
       </div>
     </div>
     <!-- =========== SECTION CLIENTS ==============  -->
@@ -615,5 +664,7 @@
     </div>
   </div>
 </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
