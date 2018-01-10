@@ -63,3 +63,66 @@
   }
 
 }
+
+.hamburger-button {
+
+  background-color: transparent;
+  border: none;
+  display: none;
+  outline: none;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+
+  &__icon {
+    width: 35px;
+    height: 30px;;
+    position: relative;
+    margin-top: 5px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+
+  &__icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: $color-white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  &__icon span:nth-child(1) {
+    top: 0px;
+  }
+  
+  &__icon span:nth-child(2) {
+    top: 10px;
+  }
+
+  &__icon span:nth-child(3) {
+    top: 20px;
+  }
+
+  &__icon--open span:nth-child(1) {
+    top: 10px;
+    transform: rotate(135deg);
+  }
+  
+  &__icon--open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  
+  &__icon--open span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-135deg);
+  }
+
+}

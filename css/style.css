@@ -136,6 +136,49 @@ body {
 .btn-arrow:active, .btn-arrow:focus {
   outline: none; }
 
+.hamburger-button {
+  background-color: transparent;
+  border: none;
+  display: none;
+  outline: none; }
+  @media only screen and (max-width: 56.25em) {
+    .hamburger-button {
+      display: block; } }
+  .hamburger-button__icon {
+    width: 35px;
+    height: 30px;
+    position: relative;
+    margin-top: 5px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+  .hamburger-button__icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out; }
+  .hamburger-button__icon span:nth-child(1) {
+    top: 0px; }
+  .hamburger-button__icon span:nth-child(2) {
+    top: 10px; }
+  .hamburger-button__icon span:nth-child(3) {
+    top: 20px; }
+  .hamburger-button__icon--open span:nth-child(1) {
+    top: 10px;
+    transform: rotate(135deg); }
+  .hamburger-button__icon--open span:nth-child(2) {
+    opacity: 0;
+    left: -60px; }
+  .hamburger-button__icon--open span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-135deg); }
+
 .gallery {
   padding: 2rem;
   display: flex;
@@ -736,6 +779,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     margin: 0 auto;
     height: 100%;
     max-width: 120rem;
@@ -744,19 +788,37 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
   .header__arrow {
     color: #fff;
     font-size: 5rem;
-    margin-bottom: 5rem;
-    animation: bounce 2s infinite; }
+    margin-bottom: 3rem;
+    animation: bounce 2s infinite;
+    position: absolute;
+    bottom: 0; }
 
 .navigation {
-  padding: 0 2rem;
+  position: fixed;
+  padding: 2rem 10rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  z-index: 999;
+  transition: all .3s; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation {
+      padding: 2rem 5rem; } }
+  .navigation--scroll {
+    background-color: rgba(243, 129, 129, 0.8);
+    padding: 5px 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation--scroll {
+        padding: 2rem 5rem; } }
   .navigation__brand:link, .navigation__brand:visited {
     text-decoration: none;
     color: #fff;
@@ -767,6 +829,22 @@ body {
     color: #fce48b; }
   .navigation__list {
     list-style: none; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(243, 129, 129, 0.8);
+        width: 100%;
+        height: 50vh;
+        top: -50rem;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .3s; } }
+    .navigation__list--active {
+      top: 9rem; }
   .navigation__item {
     display: inline-block; }
   .navigation__link, .navigation__icon {
@@ -778,13 +856,22 @@ body {
       font-size: 1.4rem;
       font-weight: 700;
       margin-left: 3rem; }
+      @media only screen and (max-width: 56.25em) {
+        .navigation__link:link, .navigation__link:visited, .navigation__icon:link, .navigation__icon:visited {
+          font-size: 3rem; } }
   .navigation__link {
     padding-bottom: 1rem; }
     .navigation__link:hover, .navigation__link:active {
       color: #fce48b;
       border-bottom: 2px solid #fce48b; }
+      @media only screen and (max-width: 56.25em) {
+        .navigation__link:hover, .navigation__link:active {
+          border: none; } }
   .navigation__icon:link, .navigation__icon:visited {
     font-size: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__icon:link, .navigation__icon:visited {
+        font-size: 3rem; } }
   .navigation__icon:hover, .navigation__icon:active {
     color: #fce48b; }
 

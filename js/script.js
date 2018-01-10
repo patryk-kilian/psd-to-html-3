@@ -1,5 +1,31 @@
 (function() {
 
+  //MENU ON SCROLL TOGGLE CODE
+
+  const menu = document.querySelector('.navigation');
+
+  window.addEventListener('scroll', function() {
+
+    if (scrollY > 150) {
+      menu.classList.add('navigation--scroll');
+    } else {
+      menu.classList.remove('navigation--scroll');
+    }
+
+  });
+
+  //HAMBURGER BUTTON
+
+  const hamburgerButton = document.querySelector('.hamburger-button');
+  const hamburgerIcon = document.querySelector('.hamburger-button__icon');
+  const navigationList = document.querySelector('.navigation__list');
+
+  hamburgerButton.addEventListener('click', function() {
+    hamburgerIcon.classList.toggle('hamburger-button__icon--open');
+    navigationList.classList.toggle('navigation__list--active');
+  });
+  //SECTION SERVICE EXPAND BOXES CODE
+
   const expandButton = Array.from(document.querySelectorAll('#js-service-button'));
   const serviceDescription = Array.from(document.querySelectorAll('.service__description'));
   const serviceIcon = Array.from(document.querySelectorAll('#js-service-icon'));
