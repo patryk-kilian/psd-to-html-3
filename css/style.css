@@ -970,26 +970,42 @@ body {
   background-position: center;
   background-size: cover;
   padding: 5rem 0;
+  height: 20rem;
+  position: relative;
+  transition: height .3s;
   display: flex;
   justify-content: center;
   align-items: center; }
-  .map__box {
+  .map__open-button {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    .map__box:hover > .map__link,
-    .map__box:hover > .map__icon {
-      color: #ec3333; }
-    .map__box:hover > .separator--hover {
-      background-color: #ec3333; }
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer; }
+    .map__open-button:active, .map__open-button:focus {
+      outline: none; }
+    .map__open-button:hover > .map__text,
+    .map__open-button:hover > .map__icon {
+      color: #f11; }
+    .map__open-button:hover > .separator--hover {
+      background-color: #f11; }
   .map__icon {
     font-size: 3rem;
-    color: #f38181;
+    color: #f33;
     transition: color .3s; }
-  .map__link:link, .map__link:visited {
-    text-decoration: none;
+  .map__text {
     text-transform: uppercase;
-    color: #f38181;
+    color: #f33;
     font-size: 2.4rem;
     font-weight: 700;
     transition: color .3s; }
+  .map .separator--hover {
+    background-color: #f33; }
+  .map__box {
+    position: absolute;
+    height: 40rem;
+    opacity: 0;
+    width: 100%;
+    transition: opacity .3s;
+    z-index: -1; }

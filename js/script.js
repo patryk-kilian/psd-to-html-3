@@ -60,6 +60,29 @@
     });
   });
 
+  //// MAP TOGGLE
+
+  const mapOpenButton = document.querySelector('.map__open-button');
+  const mapContainer = document.querySelector('.map');
+  const map = document.getElementById('map');
+
+  function openMap() {
+    map.style.opacity = '1';
+    mapContainer.style.height = '40rem';
+    map.style.zIndex = '0';
+  }
+
+  function closeMap() {
+    map.style.opacity = '0';
+    mapContainer.style.height = '20rem';
+    map.style.zIndex = '-1';
+  }
+
+  mapOpenButton.addEventListener('click', openMap);
+  map.addEventListener('mouseleave', closeMap);
+
+
+
 })();
 
 (function() {
@@ -125,3 +148,17 @@
   navigate(boxSecond, 0);
 
 })();
+
+ ///  MAP
+
+
+ function initMap() {
+
+  const options = {
+    zoom: 8,
+    center: {lat: 51.1078852, lng: 17.0385376}
+  };
+
+  const map = new google.maps.Map(document.getElementById('map'), options);
+
+}

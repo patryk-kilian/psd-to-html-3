@@ -110,40 +110,64 @@
   background-position: center;
   background-size: cover;
   padding: 5rem 0;
+  height: 20rem;
+  position: relative;
+  transition: height .3s;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  &__box {
+  &__open-button {
     @include flex-column-center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 
-    &:hover > .map__link,
+    &:active,
+    &:focus {
+      outline: none;
+  }
+
+    &:hover > .map__text,
     &:hover > .map__icon {
-      color: $color-1-darker;
+      color: #f11;
     }
 
     &:hover > .separator--hover {
-      background-color: $color-1-darker;
+      background-color: #f11;
     }
   }
 
   &__icon {
     font-size: 3rem;
-    color: $color-1;
+    color: #f33;
     transition: color .3s;
   }
 
-  &__link {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: $color-1;
-      font-size: 2.4rem;
-      font-weight: 700;
-      transition: color .3s;
-    }
+  &__text {
+
+    text-transform: uppercase;
+    color: #f33;
+    font-size: 2.4rem;
+    font-weight: 700;
+    transition: color .3s;
 
   }
+
+  .separator--hover {
+    background-color: #f33;
+  }
+
+  &__box {
+    position: absolute;
+    height: 40rem;
+    opacity: 0;
+    width: 100%;
+    transition: opacity .3s;
+    z-index: -1;
+  }
+
 }
+
+

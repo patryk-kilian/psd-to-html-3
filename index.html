@@ -599,11 +599,12 @@
     </section>
     <!-- =========== MAP ==============  -->
     <div class="map">
-      <div class="map__box">
+      <div id="map" class="map__box"></div>
+      <button class="map__open-button">
         <span class="icon ion-ios-location map__icon"></span>
-        <a href="#" class="map__link">Open Map</a>
+        <span class="map__text">Open Map</span>
         <hr class="separator separator--margin-small separator--hover">
-      </div>
+      </button>
     </div>
   </main>
 <!-- =========== FOOTER  ==============  -->
@@ -674,5 +675,8 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQtnF_KoNjPjbMJcZ2oX53pVtbogfsYYQ&callback=initMap">
+    </script>
 </body>
 </html>
