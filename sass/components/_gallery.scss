@@ -12,7 +12,7 @@
 
   &__box {
     position: relative;
-    transition: all .5s;
+    transition: all .3s;
     flex: 0 0 32%;
 
     @include respond(tab-port) {
@@ -22,7 +22,7 @@
     }
 
     @include respond(phone) {
-      flex: 0 0 60%;
+      flex: 0 0 85%;
     }
 
     &:hover .gallery__caption {
@@ -63,11 +63,12 @@
       top: 0;
       left: 0;
       opacity: 0;
-      transition: all .3s;
+      transition: transform .3s;
     }
   }
 
   &__img {
+    backface-visibility: hidden;
     z-index: 100;
     position: relative;
     display: block;
@@ -139,7 +140,7 @@
     }
 
     @include respond(phone) {
-      flex: 0 0 60%;
+      flex: 0 0 85%;
     }
 
     &--name,

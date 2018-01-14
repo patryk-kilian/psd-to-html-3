@@ -190,7 +190,7 @@ body {
       justify-content: center; } }
   .gallery__box {
     position: relative;
-    transition: all .5s;
+    transition: all .3s;
     flex: 0 0 32%; }
     @media only screen and (max-width: 56.25em) {
       .gallery__box {
@@ -199,7 +199,7 @@ body {
         margin-bottom: 5rem; } }
     @media only screen and (max-width: 37.5em) {
       .gallery__box {
-        flex: 0 0 60%; } }
+        flex: 0 0 85%; } }
     .gallery__box:hover .gallery__caption {
       opacity: 1; }
     .gallery__box:hover .gallery__img {
@@ -226,8 +226,9 @@ body {
       top: 0;
       left: 0;
       opacity: 0;
-      transition: all .3s; }
+      transition: transform .3s; }
   .gallery__img {
+    backface-visibility: hidden;
     z-index: 100;
     position: relative;
     display: block;
@@ -276,7 +277,7 @@ body {
         margin-bottom: 5rem; } }
     @media only screen and (max-width: 37.5em) {
       .gallery__team {
-        flex: 0 0 60%; } }
+        flex: 0 0 85%; } }
     .gallery__team--name, .gallery__team--profession {
       display: block;
       text-align: center; }
@@ -329,7 +330,7 @@ body {
   .portfolio-gallery__img {
     z-index: -1;
     height: 100%;
-    width: 48rem; }
+    width: 100%; }
   .portfolio-gallery__caption {
     position: absolute;
     top: 50%;
@@ -772,6 +773,7 @@ body {
 
 .header {
   height: 100vh;
+  min-height: 600px;
   background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 228, 139, 0.9)), url(../img/hero1.jpg);
   background-size: cover;
   background-position: center; }
@@ -797,6 +799,7 @@ body {
     color: #fff;
     font-size: 5rem;
     margin-bottom: 3rem;
+    margin-top: 5rem;
     animation: bounce 2s infinite;
     position: absolute;
     bottom: 0; }
