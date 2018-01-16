@@ -26,9 +26,9 @@
   });
   //SECTION SERVICE EXPAND BOXES CODE
 
-  const expandButton = Array.from(document.querySelectorAll('#js-service-button'));
+  const expandButton = Array.from(document.querySelectorAll('.js-service-button'));
   const serviceDescription = Array.from(document.querySelectorAll('.service__description'));
-  const serviceIcon = Array.from(document.querySelectorAll('#js-service-icon'));
+  const serviceIcon = Array.from(document.querySelectorAll('.js-service-icon'));
 
   const toggleDescription = function(index) {
 
@@ -92,8 +92,8 @@
   const prevFirst = document.querySelector('#js-btn-previous-first');
   const nextSecond = document.querySelector('#js-btn-next-second');
   const prevSecond = document.querySelector('#js-btn-previous-second');
-  const quotesPrimary =  Array.from(document.querySelectorAll('#js-quote-box-primary'));
-  const quotesSecondary = Array.from(document.querySelectorAll('#js-quote-box-secondary'));
+  const quotesPrimary =  Array.from(document.querySelectorAll('.quote__box-primary'));
+  const quotesSecondary = Array.from(document.querySelectorAll('.quote__box-secondary'));
 
   let boxFirst = {
     counter: 0,
@@ -112,7 +112,7 @@
 
     function navigate(obj, direction) {
 
-      obj.current.classList.remove('quote__box--current');
+      obj.current.classList.remove('current');
       obj.counter = obj.counter + direction;
 
       if (direction === -1 && obj.counter < 0) {
@@ -122,7 +122,7 @@
       }
 
       obj.current = obj.element[obj.counter];
-      obj.current.classList.add('quote__box--current');
+      obj.current.classList.add('current');
 
 
       };
