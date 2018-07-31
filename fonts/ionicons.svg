@@ -11,7 +11,7 @@ Created by Adam Bradley with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
 <defs>
 <font id="Ionicons" horiz-adv-x="448" >
-  <font-face 
+  <font-face
     font-family="Ionicons"
     font-weight="500"
     font-stretch="normal"
@@ -1876,10 +1876,10 @@ c0 -44 15 -63 79 -63c26 0 57 3 94 9l9 -65c-38 -9 -71 -12 -106 -12c-115 0 -164 41
     <glyph glyph-name="ion-social-euro" unicode="&#xf4e1;" horiz-adv-x="320" 
 d="M138 176h124l-7 -48h-117v-13c0 -44 15 -63 79 -63c26 0 56 3 93 9l10 -65c-38 -9 -71 -12 -106 -12c-115 0 -164 41 -164 117v27h-50v48h50v48h-50v48h50v11c0 76 49 117 164 117c35 0 68 -3 106 -12l-10 -65c-37 6 -67 9 -93 9c-64 0 -79 -22 -79 -58v-2h138l-7 -48
 h-131v-48z" />
-    <glyph glyph-name="ion-social-facebook-outline" unicode="&#xf230;" horiz-adv-x="192" 
+    <glyph glyph-name="ion-social-facebook-outline" unicode="&#xf230;" horiz-adv-x="192"
 d="M128 256h64l-8 -64h-56v-192h-83v192h-45v64h45v43c0 54 23 85 91 85h56v-64h-34c-27 0 -30 -9 -30 -26v-38zM170 208l4 32h-45h-17v17v37c0 10 1 21 9 30c10 11 25 12 37 12h18v32h-40c-28 0 -49 -6 -60 -18c-10 -11 -15 -27 -15 -51v-43v-16h-15h-30v-32h30h15v-16
 v-176h51v176v16h17h41z" />
-    <glyph glyph-name="ion-social-facebook" unicode="&#xf231;" horiz-adv-x="192" 
+    <glyph glyph-name="ion-social-facebook" unicode="&#xf231;" horiz-adv-x="192"
 d="M128 256h64l-8 -64h-56v-192h-83v192h-45v64h45v43c0 54 23 85 91 85h56v-64h-34c-27 0 -30 -9 -30 -26v-38z" />
     <glyph glyph-name="ion-social-foursquare-outline" unicode="&#xf34c;" horiz-adv-x="320" 
 d="M302 284c-12 -60 -25 -131 -27 -138zM281 416c35 0 45 -20 37 -57c-3 -16 -10 -44 -16 -75l-27 -137c-3 -13 -8 -35 -39 -35h-72c-3 0 -3 0 -6 -3c-2 -2 -115 -133 -115 -133c-9 -10 -23 -8 -28 -6s-15 8 -15 26v380s10 40 43 40h238zM280 352c6 31 6 32 -24 32h-195
