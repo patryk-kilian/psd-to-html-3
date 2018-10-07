@@ -10,3 +10,6 @@ Laout is built from scratch with flexbox.
 * SASS - css preprocessor i used
 * BEM - for class naming
 * Vanilla Javascript - for DOM manipulation
+
+
+## Live version - https://patryk-kilian.github.io/psd-to-html-3/
